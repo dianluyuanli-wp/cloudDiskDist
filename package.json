@@ -1,0 +1,49 @@
+{
+    "name": "iso-style",
+    "version": "0.0.1",
+    "scripts": {
+        "start": "node ./bin/start",
+        "dev": "nodemon ./bin/start",
+        "build": "webpack --color --config webpack.config.js",
+        "deploy": "npm run build && node writeHtml.js",
+        "rx": "babel-node ./bin/start",
+        "wh": "node ./dist/"
+    },
+    "dependencies": {
+        "@babel/core": "^7.3.4",
+        "@babel/preset-env": "^7.3.4",
+        "@types/react": "^16.9.34",
+        "@types/react-dom": "^16.9.7",
+        "antd": "^4.1.1",
+        "compression": "^1.7.4",
+        "ejs": "^2.4.1",
+        "express": "^4.16.4",
+        "http-errors": "^1.6.2",
+        "isomorphic-style-loader": "^5.1.0",
+        "moment": "2.24.0",
+        "morgan": "^1.9.1",
+        "react": "^16.8.3",
+        "react-dom": "^16.8.3",
+        "react-router-dom": "^5.2.0",
+        "umi-request": "^1.2.19",
+        "xiaohuli-package": "^1.0.9"
+    },
+    "devDependencies": {
+        "@babel/plugin-proposal-class-properties": "^7.8.3",
+        "@babel/plugin-transform-runtime": "^7.3.4",
+        "@babel/preset-react": "^7.0.0",
+        "awesome-typescript-loader": "^5.2.1",
+        "babel-loader": "^8.0.6",
+        "babel-plugin-import": "^1.13.0",
+        "css-loader": "^0.28.11",
+        "less-loader": "^6.0.0",
+        "mini-css-extract-plugin": "^0.4.5",
+        "ts-import-plugin": "^1.6.6",
+        "ts-loader": "^7.0.2",
+        "typescript": "^3.8.3",
+        "typings-for-css-modules-loader": "^1.7.0",
+        "webpack": "^4.29.6",
+        "webpack-bundle-analyzer": "^3.7.0",
+        "webpack-cli": "^3.2.3"
+    }
+}
